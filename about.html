@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aura Salon - About Us</title>
-    <meta name="description" content="About Aura Salon">
+    <title>Aura Salon - Home</title>
+    <meta name="description" content="Aura Salon - Premium Beauty Services">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <!-- Top Contact Bar -->
     <div class="top-bar">
@@ -42,8 +44,8 @@
                 <i class="fa-solid fa-bars"></i>
             </div>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -57,28 +59,86 @@
         </div>
     </nav>
 
-    <!-- About Section -->
-    <section id="about" class="page-section">
-        <div class="container">
-            <div class="section-title">
-                <h2>About Us</h2>
-                <div class="underline"></div>
+    <!-- Home Section (Slider) -->
+    <section id="home">
+        <div class="slider">
+            <div class="slide active">
+                <div class="content">
+                    <h5>LONG</h5>
+                    <h1>STRAIGHT HAIRCUTS</h1>
+                    <p>Long straight haircuts from London Fashion Week<br>everyone is talking about.</p>
+                </div>
             </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>Welcome to Aura Salon</h3>
-                    <p>At Aura Salon, we believe that beauty is an art form. Our team of expert stylists and therapists are dedicated to providing you with a transformative experience that enhances your natural beauty and leaves you feeling rejuvenated.</p>
-                    <p>With years of experience and a passion for excellence, we offer a sanctuary where you can relax, unwind, and let us take care of the rest. Come and discover the Aura difference.</p>
+
+            <div class="slide">
+                <div class="content">
+                    <h5>NEW</h5>
+                    <h1>FASHION STYLE</h1>
+                    <p>Discover the newest collection with modern designs and premium quality.</p>
+                    <a href="services.html" class="btn">EXPLORE</a>
                 </div>
-                <div class="about-image">
-                    <div class="image-placeholder">
-                    </div>
+                <div class="image">
+                    <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=700" alt="Fashion Style">
                 </div>
+            </div>
+
+            <div class="slide">
+                <div class="content">
+                    <h5>SUMMER</h5>
+                    <h1>BEAUTY LOOK</h1>
+                    <p>Premium clothing collection designed for elegance and comfort.</p>
+                    <a href="services.html" class="btn">VIEW MORE</a>
+                </div>
+                <div class="image">
+                    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=700" alt="Beauty Look">
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="prev">&#10094;</button>
+                <button id="next">&#10095;</button>
+            </div>
+
+            <div class="dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Welcome Section -->
+    <section class="welcome-section">
+        <div class="container welcome-container">
+            <div class="welcome-text">
+                <h2>WELCOME</h2>
+                <h4>WHO WE ARE</h4>
+                <div class="divider">
+                    <span class="line"></span>
+                    <i class="fa-solid fa-scissors"></i>
+                    <span class="line"></span>
+                </div>
+                <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.
+                    Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam
+                    processus dynamicus, qui sequitur mutationem consuetudium lectorum.</p>
+                <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas
+                    humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur.
+                </p>
+            </div>
+            <div class="welcome-image">
+                <img src="assets/images/welcome-stylist.png" alt="Welcome Stylist">
+            </div>
+        </div>
+    </section>
+
+    <!-- Parallax Section -->
+    <section class="parallax-section">
+        <div class="parallax-content">
+            <h2>AMAZING STYLISTS AMAZING STYLE</h2>
+            <a href="services.html" class="btn outline-btn">BOOK NOW</a>
+        </div>
+    </section>
+
     <!-- Location Section -->
     <section class="page-section" style="padding-bottom: 20px; min-height: auto;">
         <div class="container">
@@ -88,11 +148,15 @@
             </div>
             <div class="location-map-container">
                 <div class="location-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34432.79304883674!2d91.74242201083983!3d26.15406690000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375a59cfc04a7ee7%3A0x782289a18e7ede3b!2sN%20R%20Unisex%20Salon%20and%20beauty%20studio!5e1!3m2!1sen!2sin!4v1785430603327!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34432.79304883674!2d91.74242201083983!3d26.15406690000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375a59cfc04a7ee7%3A0x782289a18e7ede3b!2sN%20R%20Unisex%20Salon%20and%20beauty%20studio!5e1!3m2!1sen!2sin!4v1785430603327!5m2!1sen!2sin"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"></iframe>
                 </div>
                 <div class="location-qr">
                     <h4>Scan for Location</h4>
-                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://maps.google.com/?q=26.1540669,91.742422" alt="Location QR Code">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://maps.google.com/?q=26.1540669,91.742422"
+                        alt="Location QR Code">
                 </div>
             </div>
         </div>
@@ -103,7 +167,8 @@
         <div class="container footer-content">
             <div class="footer-section about-salon">
                 <h3>AURA SALON</h3>
-                <p>Experience premium beauty services in a luxurious environment. We are dedicated to bringing out your true radiance.</p>
+                <p>Experience premium beauty services in a luxurious environment. We are dedicated to bringing out your
+                    true radiance.</p>
                 <div class="footer-socials">
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
                     <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -111,7 +176,7 @@
                     <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
                 </div>
             </div>
-            
+
             <div class="footer-section contact-info-footer">
                 <h3>Contact Us</h3>
                 <ul>
@@ -120,7 +185,7 @@
                     <li><i class="fa-solid fa-envelope"></i> hello@aurasalon.com</li>
                 </ul>
             </div>
-            
+
             <div class="footer-section opening-hours">
                 <h3>Opening Hours</h3>
                 <ul>
@@ -138,7 +203,7 @@
             <p>&copy; 2026 Aura Salon. All rights reserved.</p>
         </div>
     </footer>
-    
+
     <script>
         // Sticky Header Logic
         window.addEventListener('scroll', () => {
@@ -159,7 +224,7 @@
 
         mobileMenu.addEventListener('click', () => {
             navLinks.classList.toggle('active');
-            
+
             const icon = mobileMenu.querySelector('i');
             if (navLinks.classList.contains('active')) {
                 icon.classList.remove('fa-bars');
@@ -169,6 +234,44 @@
                 icon.classList.add('fa-bars');
             }
         });
+
+        // Slider Logic
+        const slides = document.querySelectorAll(".slide");
+        const dots = document.querySelectorAll(".dot");
+        let current = 0;
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove("active"));
+            dots.forEach(dot => dot.classList.remove("active"));
+            slides[index].classList.add("active");
+            dots[index].classList.add("active");
+        }
+
+        document.getElementById("next").onclick = () => {
+            current++;
+            if (current >= slides.length) current = 0;
+            showSlide(current);
+        };
+
+        document.getElementById("prev").onclick = () => {
+            current--;
+            if (current < 0) current = slides.length - 1;
+            showSlide(current);
+        };
+
+        dots.forEach((dot, index) => {
+            dot.onclick = () => {
+                current = index;
+                showSlide(current);
+            };
+        });
+
+        setInterval(() => {
+            current++;
+            if (current >= slides.length) current = 0;
+            showSlide(current);
+        }, 5000);
     </script>
 </body>
+
 </html>

@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aura Salon - Gallery</title>
-    <meta name="description" content="Aura Salon Gallery">
+    <title>NR Saloon - Gallery</title>
+    <meta name="description" content="NR Saloon Gallery">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <img src="assets/images/image_nobg.png" alt="Loading..." class="loader-logo">
+    </div>
+
     <!-- Top Contact Bar -->
     <div class="top-bar">
         <div class="container top-bar-content">
             <div class="top-bar-left">
                 <div class="logo">
-                    <span class="logo-text">AURA</span>
+                    <img src="assets/images/image_nobg.png" alt="NR Saloon Logo" class="main-logo">
                 </div>
             </div>
             <div class="top-bar-right">
@@ -29,7 +34,7 @@
                 </div>
                 <div class="contact-info">
                     <i class="fa-solid fa-envelope"></i>
-                    <span>hello@aurasalon.com</span>
+                    <span>hello@nrsaloon.com</span>
                 </div>
             </div>
         </div>
@@ -99,7 +104,7 @@
     <footer class="footer">
         <div class="container footer-content">
             <div class="footer-section about-salon">
-                <h3>AURA SALON</h3>
+                <h3>NR SALOON</h3>
                 <p>Experience premium beauty services in a luxurious environment. We are dedicated to bringing out your true radiance.</p>
                 <div class="footer-socials">
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
@@ -114,7 +119,7 @@
                 <ul>
                     <li><i class="fa-solid fa-location-dot"></i> 123 Beauty Lane, NY 10001</li>
                     <li><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</li>
-                    <li><i class="fa-solid fa-envelope"></i> hello@aurasalon.com</li>
+                    <li><i class="fa-solid fa-envelope"></i> hello@nrsaloon.com</li>
                 </ul>
             </div>
             
@@ -132,7 +137,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Aura Salon. All rights reserved.</p>
+            <p>&copy; 2026 NR Saloon. All rights reserved.</p>
         </div>
     </footer>
     
@@ -164,6 +169,18 @@
             } else {
                 icon.classList.remove('fa-xmark');
                 icon.classList.add('fa-bars');
+            }
+        });
+    </script>
+
+    <script>
+        window.addEventListener('load', () => {
+            const preloader = document.getElementById('preloader');
+            if (preloader) {
+                preloader.style.opacity = '0';
+                setTimeout(() => {
+                    preloader.style.display = 'none';
+                }, 500);
             }
         });
     </script>
