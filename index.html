@@ -46,11 +46,20 @@
                 <i class="fa-solid fa-bars"></i>
             </div>
             <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+
+                <!-- Social Links for Mobile Side Drawer -->
+                <li class="mobile-socials-item">
+                    <div class="social-links-mobile">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                    </div>
+                </li>
             </ul>
             <div class="social-links">
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
@@ -77,7 +86,7 @@
                     <h5>NEW</h5>
                     <h1>FASHION STYLE</h1>
                     <p>Discover the newest collection with modern designs and premium quality.</p>
-                    <a href="services.html" class="btn">EXPLORE</a>
+                    <a href="#services" class="btn">EXPLORE</a>
                 </div>
                 <div class="image">
                     <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=700" alt="Fashion Style">
@@ -89,7 +98,7 @@
                     <h5>SUMMER</h5>
                     <h1>BEAUTY LOOK</h1>
                     <p>Premium clothing collection designed for elegance and comfort.</p>
-                    <a href="services.html" class="btn">VIEW MORE</a>
+                    <a href="#services" class="btn">VIEW MORE</a>
                 </div>
                 <div class="image">
                     <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=700" alt="Beauty Look">
@@ -110,7 +119,7 @@
     </section>
 
     <!-- Welcome Section -->
-    <section class="welcome-section">
+    <section class="welcome-section" id="about">
         <div class="container welcome-container">
             <div class="welcome-text">
                 <h2>WELCOME</h2>
@@ -124,7 +133,7 @@
                     Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam
                     processus dynamicus, qui sequitur mutationem consuetudium lectorum.</p>
                 <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas
-                    humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur.
+                    humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, who now seem to us.
                 </p>
             </div>
             <div class="welcome-image">
@@ -133,13 +142,540 @@
         </div>
     </section>
 
+
+
+    <!-- Experts Section -->
+    <section class="experts-section">
+        <div class="container experts-container">
+            <div class="experts-header-col">
+                <span class="sub-title">OUR TEAM</span>
+                <h2>Meet The Experts</h2>
+                <div class="underline-left"></div>
+                <a href="#about" class="btn outline-dark-btn">ABOUT US</a>
+            </div>
+
+            <div class="expert-card-col stylists-col">
+                <div class="expert-img">
+                    <img src="assets/images/stylist_cutting.png" alt="Our Stylists">
+                </div>
+                <div class="expert-info">
+                    <h3>Our Stylists</h3>
+                    <p>Our styling team is comprised of top style directors, experienced senior stylists and some of the
+                        best young salon stylists who have been trained in-house.</p>
+                </div>
+            </div>
+
+            <div class="expert-card-col colourists-col">
+                <div class="expert-info">
+                    <h3>Our Colourists</h3>
+                    <p>Our colour team is comprised of top colour directors, experienced senior colourists and some of
+                        the best young salon colourists who have been trained in-house.</p>
+                </div>
+                <div class="expert-img">
+                    <img src="assets/images/colourist_swatches.png" alt="Our Colourists">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Parallax Section -->
     <section class="parallax-section">
         <div class="parallax-content">
             <h2>AMAZING STYLISTS AMAZING STYLE</h2>
-            <a href="services.html" class="btn outline-btn">BOOK NOW</a>
+            <a href="#services" class="btn outline-btn">BOOK NOW</a>
         </div>
     </section>
+
+    <!-- Services Section -->
+    <!-- Services Section Wrapper -->
+    <div id="services" class="services-stack-wrapper">
+
+        <!-- Men's Services -->
+        <section id="men-services-section" class="services-section-light">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our <span>Services</span></h2>
+                    <div class="underline"></div>
+                </div>
+
+                <div class="services-tabs-container">
+                    <div class="services-tabs-light">
+                        <a href="#men-services-section" class="tab-btn-light active">Gent's Grooming</a>
+                        <span class="tab-separator">|</span>
+                        <a href="#women-services-section" class="tab-btn-light">Ladies' Styling</a>
+                    </div>
+                </div>
+
+                <div class="services-content">
+                    <div class="services-split-container">
+                        <div class="services-hero-side">
+                            <div class="hero-image-wrapper">
+                                <img src="assets/images/services_gents.png" alt="Gent's Grooming">
+                                <div class="hero-image-overlay">
+                                    <span class="overlay-title">Gent's Selection</span>
+                                    <span class="overlay-subtitle">Crafted Grooming Experience</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services-list-side">
+                            <div class="services-grid">
+                                <div class="service-card-light" data-service-id="men-haircut"
+                                    data-service-name="Haircut" data-service-category="Men"
+                                    onclick="toggleServiceCard(this)">
+                                    <div class="card-header-light">
+                                        <span class="card-tag-light">TRENDING</span>
+                                        <span class="card-num-light">// 01</span>
+                                    </div>
+                                    <div class="card-icon-wrapper-light"><i class="fa-solid fa-scissors"></i></div>
+                                    <h3>Haircut</h3>
+                                    <p>Gent's professional haircut styled to match your face structure.</p>
+                                    <div class="card-footer-light">
+                                        <div class="select-indicator-light">
+                                            <span class="select-text-light">ADD TO SLOTS</span>
+                                            <div class="select-circle-light"><i class="fa-solid fa-plus"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service-card-light" data-service-id="men-shaving"
+                                    data-service-name="Shaving" data-service-category="Men"
+                                    onclick="toggleServiceCard(this)">
+                                    <div class="card-header-light">
+                                        <span class="card-tag-light">ESSENTIAL</span>
+                                        <span class="card-num-light">// 02</span>
+                                    </div>
+                                    <div class="card-icon-wrapper-light"><i class="fa-solid fa-soap"></i></div>
+                                    <h3>Shaving</h3>
+                                    <p>Smooth clean shave with a premium hot towel treatment.</p>
+                                    <div class="card-footer-light">
+                                        <div class="select-indicator-light">
+                                            <span class="select-text-light">ADD TO SLOTS</span>
+                                            <div class="select-circle-light"><i class="fa-solid fa-plus"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service-card-light" data-service-id="men-cleanup"
+                                    data-service-name="Cleanup" data-service-category="Men"
+                                    onclick="toggleServiceCard(this)">
+                                    <div class="card-header-light">
+                                        <span class="card-tag-light">FRESH</span>
+                                        <span class="card-num-light">// 03</span>
+                                    </div>
+                                    <div class="card-icon-wrapper-light"><i class="fa-solid fa-face-smile"></i></div>
+                                    <h3>Cleanup</h3>
+                                    <p>Deep cleansing and exfoliation to refresh facial skin.</p>
+                                    <div class="card-footer-light">
+                                        <div class="select-indicator-light">
+                                            <span class="select-text-light">ADD TO SLOTS</span>
+                                            <div class="select-circle-light"><i class="fa-solid fa-plus"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service-card-light" data-service-id="men-facial" data-service-name="Facial"
+                                    data-service-category="Men" onclick="toggleServiceCard(this)">
+                                    <div class="card-header-light">
+                                        <span class="card-tag-light">GLOW</span>
+                                        <span class="card-num-light">// 04</span>
+                                    </div>
+                                    <div class="card-icon-wrapper-light"><i class="fa-solid fa-spa"></i></div>
+                                    <h3>Facial</h3>
+                                    <p>Premium skin treatment for hydration and long-lasting glow.</p>
+                                    <div class="card-footer-light">
+                                        <div class="select-indicator-light">
+                                            <span class="select-text-light">ADD TO SLOTS</span>
+                                            <div class="select-circle-light"><i class="fa-solid fa-plus"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service-card-light" data-service-id="men-hairspa"
+                                    data-service-name="Hair Spa" data-service-category="Men"
+                                    onclick="toggleServiceCard(this)">
+                                    <div class="card-header-light">
+                                        <span class="card-tag-light">RELAX</span>
+                                        <span class="card-num-light">// 05</span>
+                                    </div>
+                                    <div class="card-icon-wrapper-light"><i class="fa-solid fa-droplet"></i></div>
+                                    <h3>Hair Spa</h3>
+                                    <p>Nourishing hair and scalp massage to restore strength and shine.</p>
+                                    <div class="card-footer-light">
+                                        <div class="select-indicator-light">
+                                            <span class="select-text-light">ADD TO SLOTS</span>
+                                            <div class="select-circle-light"><i class="fa-solid fa-plus"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service-card-light" data-service-id="men-haircolour"
+                                    data-service-name="Hair Colour" data-service-category="Men"
+                                    onclick="toggleServiceCard(this)">
+                                    <div class="card-header-light">
+                                        <span class="card-tag-light">LUXURY</span>
+                                        <span class="card-num-light">// 06</span>
+                                    </div>
+                                    <div class="card-icon-wrapper-light"><i class="fa-solid fa-palette"></i></div>
+                                    <h3>Hair Colour</h3>
+                                    <p>Natural looking gray coverage and fashion hair color.</p>
+                                    <div class="card-footer-light">
+                                        <div class="select-indicator-light">
+                                            <span class="select-text-light">ADD TO SLOTS</span>
+                                            <div class="select-circle-light"><i class="fa-solid fa-plus"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service-card-light" data-service-id="men-highlights"
+                                    data-service-name="Global Highlights Colour" data-service-category="Men"
+                                    onclick="toggleServiceCard(this)">
+                                    <div class="card-header-light">
+                                        <span class="card-tag-light">SIGNATURE</span>
+                                        <span class="card-num-light">// 07</span>
+                                    </div>
+                                    <div class="card-icon-wrapper-light"><i class="fa-solid fa-wand-magic-sparkles"></i>
+                                    </div>
+                                    <h3>Global Highlights Colour</h3>
+                                    <p>Bold highlights styled globals for a distinctive, modern look.</p>
+                                    <div class="card-footer-light">
+                                        <div class="select-indicator-light">
+                                            <span class="select-text-light">ADD TO SLOTS</span>
+                                            <div class="select-circle-light"><i class="fa-solid fa-plus"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Women's Services -->
+        <section id="women-services-section" class="services-section-light">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Ladies' <span>Styling</span></h2>
+                    <div class="underline"></div>
+                </div>
+
+                <div class="services-tabs-container">
+                    <div class="services-tabs-light">
+                        <a href="#men-services-section" class="tab-btn-light">Gent's Grooming</a>
+                        <span class="tab-separator">|</span>
+                        <a href="#women-services-section" class="tab-btn-light active">Ladies' Styling</a>
+                    </div>
+                </div>
+
+                <div class="services-content">
+                    <div class="services-split-container">
+                        <div class="services-hero-side">
+                            <div class="hero-image-wrapper">
+                                <img src="assets/images/services_ladies.png" alt="Ladies' Styling">
+                                <div class="hero-image-overlay">
+                                    <span class="overlay-title">Ladies' Styling</span>
+                                    <span class="overlay-subtitle">Exclusive Beauty & Wellness</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services-list-side">
+                            <div class="services-grid">
+                                <div class="service-card-light" data-service-id="women-haircut"
+                                    data-service-name="Haircut" data-service-category="Women"
+                                    onclick="toggleServiceCard(this)">
+                                    <div class="card-header-light">
+                                        <span class="card-tag-light">TRENDING</span>
+                                        <span class="card-num-light">// 01</span>
+                                    </div>
+                                    <div class="card-icon-wrapper-light"><i class="fa-solid fa-scissors"></i></div>
+                                    <h3>Haircut</h3>
+                                    <p>Custom ladies' designer haircut finished with professional styling.</p>
+                                    <div class="card-footer-light">
+                                        <div class="select-indicator-light">
+                                            <span class="select-text-light">ADD TO SLOTS</span>
+                                            <div class="select-circle-light"><i class="fa-solid fa-plus"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service-card-light" data-service-id="women-trimming"
+                                    data-service-name="Trimming" data-service-category="Women"
+                                    onclick="toggleServiceCard(this)">
+                                    <div class="card-header-light">
+                                        <span class="card-tag-light">ESSENTIAL</span>
+                                        <span class="card-num-light">// 02</span>
+                                    </div>
+                                    <div class="card-icon-wrapper-light"><i class="fa-solid fa-scissors"></i></div>
+                                    <h3>Trimming</h3>
+                                    <p>Quick ends clean up to keep your locks growing strong and healthy.</p>
+                                    <div class="card-footer-light">
+                                        <div class="select-indicator-light">
+                                            <span class="select-text-light">ADD TO SLOTS</span>
+                                            <div class="select-circle-light"><i class="fa-solid fa-plus"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service-card-light" data-service-id="women-uvcut"
+                                    data-service-name="U/V Cut" data-service-category="Women"
+                                    onclick="toggleServiceCard(this)">
+                                    <div class="card-header-light">
+                                        <span class="card-tag-light">FRESH</span>
+                                        <span class="card-num-light">// 03</span>
+                                    </div>
+                                    <div class="card-icon-wrapper-light"><i class="fa-solid fa-angle-down"></i></div>
+                                    <h3>U/V Cut</h3>
+                                    <p>Modern U-shape or V-shape styling cuts for layered length.</p>
+                                    <div class="card-footer-light">
+                                        <div class="select-indicator-light">
+                                            <span class="select-text-light">ADD TO SLOTS</span>
+                                            <div class="select-circle-light"><i class="fa-solid fa-plus"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service-card-light" data-service-id="women-hairspa"
+                                    data-service-name="Hairspa" data-service-category="Women"
+                                    onclick="toggleServiceCard(this)">
+                                    <div class="card-header-light">
+                                        <span class="card-tag-light">RELAX</span>
+                                        <span class="card-num-light">// 04</span>
+                                    </div>
+                                    <div class="card-icon-wrapper-light"><i class="fa-solid fa-spa"></i></div>
+                                    <h3>Hairspa</h3>
+                                    <p>Revitalizing scalp care and deep root hair conditioning.</p>
+                                    <div class="card-footer-light">
+                                        <div class="select-indicator-light">
+                                            <span class="select-text-light">ADD TO SLOTS</span>
+                                            <div class="select-circle-light"><i class="fa-solid fa-plus"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service-card-light" data-service-id="women-threading"
+                                    data-service-name="Threading" data-service-category="Women"
+                                    onclick="toggleServiceCard(this)">
+                                    <div class="card-header-light">
+                                        <span class="card-tag-light">ESSENTIAL</span>
+                                        <span class="card-num-light">// 05</span>
+                                    </div>
+                                    <div class="card-icon-wrapper-light"><i class="fa-solid fa-eye"></i></div>
+                                    <h3>Threading</h3>
+                                    <p>Precise hair removal for shaping eyebrows and facial glow.</p>
+                                    <div class="card-footer-light">
+                                        <div class="select-indicator-light">
+                                            <span class="select-text-light">ADD TO SLOTS</span>
+                                            <div class="select-circle-light"><i class="fa-solid fa-plus"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service-card-light" data-service-id="women-cleanup"
+                                    data-service-name="Cleanup" data-service-category="Women"
+                                    onclick="toggleServiceCard(this)">
+                                    <div class="card-header-light">
+                                        <span class="card-tag-light">GLOW</span>
+                                        <span class="card-num-light">// 06</span>
+                                    </div>
+                                    <div class="card-icon-wrapper-light"><i class="fa-solid fa-sparkles"></i></div>
+                                    <h3>Cleanup</h3>
+                                    <p>Gentle skin exfoliation to clear away impurities and blackheads.</p>
+                                    <div class="card-footer-light">
+                                        <div class="select-indicator-light">
+                                            <span class="select-text-light">ADD TO SLOTS</span>
+                                            <div class="select-circle-light"><i class="fa-solid fa-plus"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service-card-light" data-service-id="women-facial"
+                                    data-service-name="Facial" data-service-category="Women"
+                                    onclick="toggleServiceCard(this)">
+                                    <div class="card-header-light">
+                                        <span class="card-tag-light">LUXURY</span>
+                                        <span class="card-num-light">// 07</span>
+                                    </div>
+                                    <div class="card-icon-wrapper-light"><i class="fa-solid fa-face-smile-wink"></i>
+                                    </div>
+                                    <h3>Facial</h3>
+                                    <p>Custom luxurious facial treatments for absolute skin restoration.</p>
+                                    <div class="card-footer-light">
+                                        <div class="select-indicator-light">
+                                            <span class="select-text-light">ADD TO SLOTS</span>
+                                            <div class="select-circle-light"><i class="fa-solid fa-plus"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service-card-light" data-service-id="women-straightening"
+                                    data-service-name="Hair Straightening" data-service-category="Women"
+                                    onclick="toggleServiceCard(this)">
+                                    <div class="card-header-light">
+                                        <span class="card-tag-light">SIGNATURE</span>
+                                        <span class="card-num-light">// 08</span>
+                                    </div>
+                                    <div class="card-icon-wrapper-light"><i class="fa-solid fa-arrows-left-right"></i>
+                                    </div>
+                                    <h3>Hair Straightening</h3>
+                                    <p>Sleek, shiny, and permanently straight hair with intensive therapy.</p>
+                                    <div class="card-footer-light">
+                                        <div class="select-indicator-light">
+                                            <span class="select-text-light">ADD TO SLOTS</span>
+                                            <div class="select-circle-light"><i class="fa-solid fa-plus"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service-card-light" data-service-id="women-smoothening"
+                                    data-service-name="Hair Smoothening" data-service-category="Women"
+                                    onclick="toggleServiceCard(this)">
+                                    <div class="card-header-light">
+                                        <span class="card-tag-light">SIGNATURE</span>
+                                        <span class="card-num-light">// 09</span>
+                                    </div>
+                                    <div class="card-icon-wrapper-light"><i class="fa-solid fa-feather"></i></div>
+                                    <h3>Hair Smoothening</h3>
+                                    <p>Natural straight look with extreme silkiness and zero frizz.</p>
+                                    <div class="card-footer-light">
+                                        <div class="select-indicator-light">
+                                            <span class="select-text-light">ADD TO SLOTS</span>
+                                            <div class="select-circle-light"><i class="fa-solid fa-plus"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service-card-light" data-service-id="women-curl" data-service-name="Curl"
+                                    data-service-category="Women" onclick="toggleServiceCard(this)">
+                                    <div class="card-header-light">
+                                        <span class="card-tag-light">FRESH</span>
+                                        <span class="card-num-light">// 10</span>
+                                    </div>
+                                    <div class="card-icon-wrapper-light"><i class="fa-solid fa-rotate"></i></div>
+                                    <h3>Curl</h3>
+                                    <p>Bouncy curls or soft beachy waves styled with modern curlers.</p>
+                                    <div class="card-footer-light">
+                                        <div class="select-indicator-light">
+                                            <span class="select-text-light">ADD TO SLOTS</span>
+                                            <div class="select-circle-light"><i class="fa-solid fa-plus"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service-card-light" data-service-id="women-botox"
+                                    data-service-name="Botox Treatment" data-service-category="Women"
+                                    onclick="toggleServiceCard(this)">
+                                    <div class="card-header-light">
+                                        <span class="card-tag-light">ADVANCED</span>
+                                        <span class="card-num-light">// 11</span>
+                                    </div>
+                                    <div class="card-icon-wrapper-light"><i class="fa-solid fa-syringe"></i></div>
+                                    <h3>Botox Treatment</h3>
+                                    <p>Advanced hair repair formula to reverse dry and split-end hair damage.</p>
+                                    <div class="card-footer-light">
+                                        <div class="select-indicator-light">
+                                            <span class="select-text-light">ADD TO SLOTS</span>
+                                            <div class="select-circle-light"><i class="fa-solid fa-plus"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service-card-light" data-service-id="women-nanoplastia"
+                                    data-service-name="Nano Plastia Treatment" data-service-category="Women"
+                                    onclick="toggleServiceCard(this)">
+                                    <div class="card-header-light">
+                                        <span class="card-tag-light">ADVANCED</span>
+                                        <span class="card-num-light">// 12</span>
+                                    </div>
+                                    <div class="card-icon-wrapper-light"><i class="fa-solid fa-atom"></i></div>
+                                    <h3>Nano Plastia Treatment</h3>
+                                    <p>Premium hair straightening based on nano-technology and organic acids.</p>
+                                    <div class="card-footer-light">
+                                        <div class="select-indicator-light">
+                                            <span class="select-text-light">ADD TO SLOTS</span>
+                                            <div class="select-circle-light"><i class="fa-solid fa-plus"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service-card-light" data-service-id="women-kerasmoothening"
+                                    data-service-name="Kera Smoothening" data-service-category="Women"
+                                    onclick="toggleServiceCard(this)">
+                                    <div class="card-header-light">
+                                        <span class="card-tag-light">LUXURY</span>
+                                        <span class="card-num-light">// 13</span>
+                                    </div>
+                                    <div class="card-icon-wrapper-light"><i class="fa-solid fa-droplet"></i></div>
+                                    <h3>Kera Smoothening</h3>
+                                    <p>Keratin protein infusion for smoother texture and radiant shine.</p>
+                                    <div class="card-footer-light">
+                                        <div class="select-indicator-light">
+                                            <span class="select-text-light">ADD TO SLOTS</span>
+                                            <div class="select-circle-light"><i class="fa-solid fa-plus"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service-card-light" data-service-id="women-waxing"
+                                    data-service-name="Waxing" data-service-category="Women"
+                                    onclick="toggleServiceCard(this)">
+                                    <div class="card-header-light">
+                                        <span class="card-tag-light">ESSENTIAL</span>
+                                        <span class="card-num-light">// 14</span>
+                                    </div>
+                                    <div class="card-icon-wrapper-light"><i class="fa-solid fa-spray-can-sparkles"></i>
+                                    </div>
+                                    <h3>Waxing</h3>
+                                    <p>Gentle full-body hair removal leaving skin feeling smooth and soft.</p>
+                                    <div class="card-footer-light">
+                                        <div class="select-indicator-light">
+                                            <span class="select-text-light">ADD TO SLOTS</span>
+                                            <div class="select-circle-light"><i class="fa-solid fa-plus"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service-card-light" data-service-id="women-manicure"
+                                    data-service-name="Manicure" data-service-category="Women"
+                                    onclick="toggleServiceCard(this)">
+                                    <div class="card-header-light">
+                                        <span class="card-tag-light">GLOW</span>
+                                        <span class="card-num-light">// 15</span>
+                                    </div>
+                                    <div class="card-icon-wrapper-light"><i class="fa-solid fa-hand"></i></div>
+                                    <h3>Manicure</h3>
+                                    <p>Nourishing hand massage, nail shaping, cuticle care, and polish.</p>
+                                    <div class="card-footer-light">
+                                        <div class="select-indicator-light">
+                                            <span class="select-text-light">ADD TO SLOTS</span>
+                                            <div class="select-circle-light"><i class="fa-solid fa-plus"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service-card-light" data-service-id="women-pedicure"
+                                    data-service-name="Pedicure" data-service-category="Women"
+                                    onclick="toggleServiceCard(this)">
+                                    <div class="card-header-light">
+                                        <span class="card-tag-light">RELAX</span>
+                                        <span class="card-num-light">// 16</span>
+                                    </div>
+                                    <div class="card-icon-wrapper-light"><i class="fa-solid fa-shoe-prints"></i></div>
+                                    <h3>Pedicure</h3>
+                                    <p>Relaxing foot spa, exfoliation, massage, and nail detailing.</p>
+                                    <div class="card-footer-light">
+                                        <div class="select-indicator-light">
+                                            <span class="select-text-light">ADD TO SLOTS</span>
+                                            <div class="select-circle-light"><i class="fa-solid fa-plus"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="page-section gallery-bg">
+        <div class="container">
+            <div class="section-title">
+                <h2>Gallery</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
+            </div>
+        </div>
+    </section>
+
+
 
     <!-- Location Section -->
     <section class="page-section" style="padding-bottom: 20px; min-height: auto;">
@@ -205,6 +741,38 @@
             <p>&copy; 2026 Aura Salon. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Floating Enquiry Cart Bar -->
+    <div id="enquiry-cart" class="enquiry-cart-bar">
+        <div class="container cart-bar-content">
+            <div class="cart-left">
+                <span class="cart-icon-wrapper">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <span id="cart-badge" class="cart-badge-count">0</span>
+                </span>
+                <div class="cart-summary-text">
+                    <h4>Selected Services</h4>
+                    <p id="cart-list">None selected</p>
+                </div>
+            </div>
+            <div class="cart-right">
+                <button onclick="sendWhatsAppEnquiry()" class="whatsapp-btn">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>Book via WhatsApp</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/917424220110" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Floating Mobile Call Tab -->
+    <a href="tel:+917424220110" class="phone-float-tab" aria-label="Call Us Now">
+        Enquiry
+    </a>
 
     <script>
         // Sticky Header Logic
@@ -273,6 +841,212 @@
             if (current >= slides.length) current = 0;
             showSlide(current);
         }, 5000);
+
+        // Scroll Spy Logic
+        const sections = document.querySelectorAll("section[id]");
+        const navLi = document.querySelectorAll(".nav-links a");
+
+        window.addEventListener("scroll", () => {
+            let currentSec = "";
+            const scrollPos = window.scrollY || window.pageYOffset;
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const id = section.getAttribute("id");
+                if (id && scrollPos >= (sectionTop - 150)) {
+                    currentSec = id;
+                }
+            });
+
+            if (currentSec) {
+                navLi.forEach(a => {
+                    a.classList.remove("active");
+                    const href = a.getAttribute("href");
+                    if (href === `#${currentSec}`) {
+                        a.classList.add("active");
+                    }
+                });
+            }
+        });
+
+        // Close Mobile Menu when clicking nav links
+        navLinks.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", () => {
+                navLinks.classList.remove("active");
+                const icon = mobileMenu.querySelector("i");
+                if (icon) {
+                    icon.classList.remove("fa-xmark");
+                    icon.classList.add("fa-bars");
+                }
+            });
+        });
+
+        // Dynamic Men's Services section height calculation
+        const menSection = document.getElementById('men-services-section');
+        const womenSection = document.getElementById('women-services-section');
+        const servicesTabs = document.querySelectorAll('.tab-btn-light');
+
+        function updateMenSectionHeight() {
+            if (menSection) {
+                const originalPos = menSection.style.position;
+                menSection.style.position = 'relative';
+                const height = menSection.getBoundingClientRect().height;
+                menSection.style.position = originalPos;
+                document.documentElement.style.setProperty('--men-section-height', `${height}px`);
+            }
+        }
+
+        // Run height update on load and resize
+        window.addEventListener('DOMContentLoaded', updateMenSectionHeight);
+        window.addEventListener('load', updateMenSectionHeight);
+        window.addEventListener('resize', updateMenSectionHeight);
+
+        window.addEventListener('scroll', () => {
+            if (!menSection || !womenSection) return;
+            const scrollPos = window.scrollY || window.pageYOffset;
+            const womenTop = womenSection.offsetTop;
+
+            // Highlight active link depending on active section
+            if (scrollPos >= (womenTop - 160)) {
+                servicesTabs.forEach(tab => {
+                    if (tab.getAttribute('href') === '#women-services-section') {
+                        tab.classList.add('active');
+                    } else {
+                        tab.classList.remove('active');
+                    }
+                });
+            } else {
+                servicesTabs.forEach(tab => {
+                    if (tab.getAttribute('href') === '#men-services-section') {
+                        tab.classList.add('active');
+                    } else {
+                        tab.classList.remove('active');
+                    }
+                });
+            }
+        });
+
+        // State for cart
+        let selectedServices = [];
+
+        function toggleServiceCard(card) {
+            const serviceId = card.getAttribute('data-service-id');
+            const serviceName = card.getAttribute('data-service-name');
+            const serviceCategory = card.getAttribute('data-service-category');
+
+            const icon = card.querySelector('.select-circle-light i');
+            const text = card.querySelector('.select-text-light');
+
+            if (card.classList.contains('selected')) {
+                // Deselect
+                card.classList.remove('selected');
+                selectedServices = selectedServices.filter(item => item.id !== serviceId);
+                if (icon) icon.className = 'fa-solid fa-plus';
+                if (text) text.textContent = 'ADD TO SLOTS';
+            } else {
+                // Select
+                card.classList.add('selected');
+                selectedServices.push({ id: serviceId, name: serviceName, category: serviceCategory });
+                if (icon) icon.className = 'fa-solid fa-check';
+                if (text) text.textContent = 'ADDED';
+            }
+
+            updateCartBar();
+        }
+
+        function updateCartBar() {
+            const cartBar = document.getElementById('enquiry-cart');
+            const badge = document.getElementById('cart-badge');
+            const listText = document.getElementById('cart-list');
+
+            if (selectedServices.length > 0) {
+                cartBar.classList.add('show');
+                badge.textContent = selectedServices.length;
+
+                const names = selectedServices.map(item => `${item.category}: ${item.name}`).join(', ');
+                listText.textContent = names;
+            } else {
+                cartBar.classList.remove('show');
+            }
+            updateMenSectionHeight();
+        }
+
+        function sendWhatsAppEnquiry() {
+            if (selectedServices.length === 0) return;
+
+            const phoneNumber = "917424220110"; // Salon WhatsApp number
+            let message = "Hello Aura Salon! I would like to enquire about booking the following services:\n\n";
+
+            selectedServices.forEach((service, index) => {
+                message += `${index + 1}. [${service.category}] ${service.name}\n`;
+            });
+
+            message += "\nPlease let me know the availability and pricing. Thank you!";
+
+            const encodedText = encodeURIComponent(message);
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedText}`;
+
+            window.open(whatsappUrl, '_blank');
+        }
+
+        // Gallery Auto-Scroll Carousel for Mobile
+        const galleryGrid = document.querySelector('.gallery-grid');
+        let autoScrollInterval = null;
+        let isUserInteracting = false;
+        let interactionTimeout = null;
+
+        function startGalleryAutoScroll() {
+            if (window.innerWidth > 768) {
+                stopGalleryAutoScroll();
+                return;
+            }
+            if (autoScrollInterval) return;
+
+            autoScrollInterval = setInterval(() => {
+                if (isUserInteracting || !galleryGrid) return;
+
+                const maxScrollLeft = galleryGrid.scrollWidth - galleryGrid.clientWidth;
+                if (galleryGrid.scrollLeft >= maxScrollLeft - 10) {
+                    // Wrap smoothly back to start
+                    galleryGrid.scrollTo({ left: 0, behavior: 'smooth' });
+                } else {
+                    // Scroll by card width (280px + 15px gap = 295px)
+                    galleryGrid.scrollBy({ left: 295, behavior: 'smooth' });
+                }
+            }, 3000);
+        }
+
+        function stopGalleryAutoScroll() {
+            if (autoScrollInterval) {
+                clearInterval(autoScrollInterval);
+                autoScrollInterval = null;
+            }
+        }
+
+        function handleUserInteraction() {
+            isUserInteracting = true;
+            clearTimeout(interactionTimeout);
+
+            // Resume auto scroll after 5 seconds of no interaction
+            interactionTimeout = setTimeout(() => {
+                isUserInteracting = false;
+            }, 5000);
+        }
+
+        if (galleryGrid) {
+            galleryGrid.addEventListener('scroll', handleUserInteraction, { passive: true });
+            galleryGrid.addEventListener('touchstart', handleUserInteraction, { passive: true });
+            galleryGrid.addEventListener('mousedown', handleUserInteraction, { passive: true });
+
+            startGalleryAutoScroll();
+
+            window.addEventListener('resize', () => {
+                if (window.innerWidth <= 768) {
+                    startGalleryAutoScroll();
+                } else {
+                    stopGalleryAutoScroll();
+                }
+            });
+        }
     </script>
 </body>
 
